@@ -1,91 +1,91 @@
-# DIO - Trilha .NET - Banco de Dados
+# DIO - .NET Track - Database
 www.dio.me
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de banco de dados, da trilha .NET da DIO.
+## Project challenge
+For this challenge, you will need to use your knowledge acquired in the database module of DIO's .NET track.
 
-## Contexto
-Você é responsável pelo banco de dados de um site de filmes, onde são armazenados dados sobre os filmes e seus atores. Sendo assim, foi solicitado para que você realize uma consulta no banco de dados com o objetivo de trazer alguns dados para análises.
+## Context
+You are responsible for the database of a movie website, where data about movies and their actors is stored. You have therefore been asked to perform a query on the database in order to bring up some data for analysis.
 
-## Proposta
-Você precisará realizar 12 consultas ao banco de dados, cada uma retornando um tipo de informação.
-O seu banco de dados está modelado da seguinte maneira:
+## Proposal
+You will need to perform 12 queries on the database, each returning a different type of information.
+Your database is modeled as follows:
 
-![Diagrama banco de dados](Imagens/diagrama.png)
+![Database diagram](Images/diagrama.png)
 
-As tabelas sao descritas conforme a seguir:
+The tables are described as follows:
 
 **Filmes**
 
-Tabela responsável por armazenar informações dos filmes.
+Table responsible for storing movie information.
 
 **Atores**
 
-Tabela responsável por armazenar informações dos atores.
+Table responsible for storing actor information.
 
 **Generos**
 
-Tabela responsável por armazenar os gêneros dos filmes.
+Table responsible for storing movie genres.
 
 **ElencoFilme**
 
-Tabela responsável por representar um relacionamento do tipo muitos para muitos entre filmes e atores, ou seja, um ator pode trabalhar em muitos filmes, e filmes
-podem ter muitos atores.
+Table responsible for representing a many-to-many relationship between films and actors, i.e. an actor can work in many films, and films
+can have many actors.
 
 **FilmesGenero**
 
-Tabela responsável por representar um relacionamento do tipo muitos para muitos entre filmes e gêneros, ou seja, um filme pode ter mais de um gênero, e um genêro pode fazer parte de muitos filmes.
+Table responsible for representing a many-to-many relationship between films and genres, i.e. a film can have more than one genre, and a genre can be part of many films.
 
-## Preparando o banco de dados
-Você deverá executar o arquivo **Script Filmes.sql** em seu banco de dados SQL Server, presente na pasta Scripts deste repositório ([ou clique aqui](Script%20Filmes.sql)). Esse script irá criar um banco chamado **Filmes**, contendo as tabelas e os dados necessários para você realizar este desafio.
+## Preparing the database
+You must run the file **Script Filmes.sql** in your SQL Server database, in the Scripts folder of this repository ([or click here](Script%20Filmes.sql)). This script will create a database called **Films**, containing the tables and data you need to carry out this challenge.
 
-## Objetivo
-Você deverá criar diversas consultas, com o objetivo de retornar os dados a seguir. Abaixo de cada pedido tem o retorno esperado. O seu retorno deve ser igual ao da imagem.
+## Objective
+You will have to create several queries in order to return the following data. Below each request is the expected return. Your return should be the same as the image.
 
-## 1 - Buscar o nome e ano dos filmes
+## 1 - Search for the name and year of the movie
 
-![Exercicio 1](Imagens/1.png)
+![Exercise 1](Images/1.png)
 
-## 2 - Buscar o nome e ano dos filmes, ordenados por ordem crescente pelo ano
+## 2 - Search by movie name and year, sorted in ascending order by year
 
-![Exercicio 2](Imagens/2.png)
+![Exercise 2](Images/2.png)
 
-## 3 - Buscar pelo filme de volta para o futuro, trazendo o nome, ano e a duração
+## 3 - Search for the movie De Volta para o Futuro, bringing up the name, year and duration
 
-![Exercicio 3](Imagens/3.png)
+![Exercise 3](Images/3.png)
 
-## 4 - Buscar os filmes lançados em 1997
+## 4 - Search for films released in 1997
 
-![Exercicio 4](Imagens/4.png)
+![Exercise 4](Images/4.png)
 
-## 5 - Buscar os filmes lançados APÓS o ano 2000
+## 5 - Search for films released AFTER 2000
 
-![Exercicio 5](Imagens/5.png)
+![Exercise 5](Images/5.png)
 
-## 6 - Buscar os filmes com a duracao maior que 100 e menor que 150, ordenando pela duracao em ordem crescente
+## 6 - Search for films with a running time greater than 100 and less than 150, sorting by running time in ascending order
 
-![Exercicio 6](Imagens/6.png)
+![Exercise 6](Images/6.png)
 
-## 7 - Buscar a quantidade de filmes lançadas no ano, agrupando por ano, ordenando pela duracao em ordem decrescente
+## 7 - Search for the number of films released in the year, grouped by year, sorted by length in descending order
 
-![Exercicio 7](Imagens/7.png)
+![Exercise 7](Images/7.png)
 
-## 8 - Buscar os Atores do gênero masculino, retornando o PrimeiroNome, UltimoNome
+## 8 - Search for male Actors, returning PrimeiroNome, UltimoNome
 
-![Exercicio 8](Imagens/8.png)
+![Exercise 8](Images/8.png)
 
-## 9 - Buscar os Atores do gênero feminino, retornando o PrimeiroNome, UltimoNome, e ordenando pelo PrimeiroNome
+## 9 - Search for female Actors, returning PrimeiroNome, UltimoNome, and sorting by PrimeiroNome
 
-![Exercicio 9](Imagens/9.png)
+![Exercise 9](Images/9.png)
 
-## 10 - Buscar o nome do filme e o gênero
+## 10 - Search for the name of the movie and the genre
 
-![Exercicio 10](Imagens/10.png)
+![Exercise 10](Images/10.png)
 
-## 11 - Buscar o nome do filme e o gênero do tipo "Mistério"
+## 11 - Search for the name of the movie and the genre "Mistério"
 
-![Exercicio 11](Imagens/11.png)
+![Exercise 11](Images/11.png)
 
-## 12 - Buscar o nome do filme e os atores, trazendo o PrimeiroNome, UltimoNome e seu Papel
+## 12 - Search for the name of the movie and the actors, bringing up the PrimeiroNome, UltimoNome and their Papel
 
-![Exercicio 12](Imagens/12.png)
+![Exercise 12](Images/12.png)
